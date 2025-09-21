@@ -60,6 +60,21 @@
             </section>
         </main>
     </div>
+<section style="text-align:center; margin-top:40px;">
+  <h2>📱 Accès rapide à mon CV</h2>
+  <p>Scanne ce QR code pour consulter mon CV en ligne :</p>
+  <div id="qrcode"></div>
+</section>
+
+<!-- Librairie QRCode.js -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+<script>
+  new QRCode(document.getElementById("qrcode"), {
+    text: "https://kamagateaicha709-sketch.github.io/mon_projet_qr/",
+    width: 200,
+    height: 200
+  });
+</script>
 
 </body>
 </html>
